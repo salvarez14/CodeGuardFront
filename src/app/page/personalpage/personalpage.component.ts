@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-
-import { UserService } from '../service/user.service';
 import { FormBuilder, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-
-import { Router, RouterLink } from '@angular/router';
-import { AuthService } from '../service/auth.service';
 import { CommonModule } from '@angular/common';
-import { UserInfo } from '../model/user-info';
-import { ExerciseService } from '../service/exercise.service';
-import { ExerciseResponse } from '../model/exercise-response';
-import { ChangePasswordResponse } from '../model/change-passwords-response';
-import { ErrorService } from '../service/error.service';
+import { RouterLink, Router } from '@angular/router';
+import { ChangePasswordResponse } from '../../model/change-passwords-response';
+import { ExerciseResponse } from '../../model/exercise-response';
+import { UserInfo } from '../../model/user-info';
+import { AuthService } from '../../service/auth.service';
+import { ErrorService } from '../../service/error.service';
+import { ExerciseService } from '../../service/exercise.service';
+import { UserService } from '../../service/user.service';
+
 
 @Component({
   selector: 'app-personalpage',
