@@ -41,7 +41,7 @@ export class RegisterComponent {
           response => {
             console.log(`Api response ${response}`);
             this.signupForm.reset();
-            this.router.navigate(['/']);
+            this.router.navigate(['/login']);
           },
           error => {
             console.error(`Error: ${error}`);

@@ -12,7 +12,7 @@
             <div class="error-feedback">
               @if (signupForm.controls['username'].touched &&
               signupForm.controls['username'].hasError('required')) {
-              <span>Please enter your full name</span>
+              <span>Please enter a valid name</span>
               }
             </div>
             <div class="error-feedback">
@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="mb-3">
-            <input type="password" formControlName="password" placeholder="password"/>
+            <input type="password" formControlName="password" placeholder="Password"/>
             <div class="error-feedback">
               @if (signupForm.controls['password'].touched &&
               signupForm.controls['password'].hasError('required')) {
@@ -46,12 +46,12 @@
               class="btn register"
               [disabled]="!signupForm.valid || signupForm.value.confirm!==signupForm.value.password"
             >
-              Signup
+              Sign Up
             </button>
           </div>
           <div class="error-feedback">
             @if (registeredUsernameError) {
-            <span>This username exists in the magic realm</span>
+            <span>This username allready exists in the magic realm</span>
             }
           </div>
         </form>

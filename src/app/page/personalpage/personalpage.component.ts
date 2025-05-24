@@ -27,6 +27,7 @@ export class PersonalpageComponent implements OnInit {
   };
 
   exercisenames: ExerciseResponse[] = [];
+  changeFailed: boolean = false;
 
   constructor(
     private userservice: UserService,
@@ -98,6 +99,7 @@ export class PersonalpageComponent implements OnInit {
   }
 
   onSubmit():void{
+    this.changeFailed = false;
     if (this.passwords.valid && this.passwords.value.oldpassword && this.passwords.value.newpassword){
       this.passwordsresponse.oldPassword = this.passwords.value.oldpassword;
       this.passwordsresponse.newPassword = this.passwords.value.newpassword;
@@ -107,6 +109,7 @@ export class PersonalpageComponent implements OnInit {
           this.passwords.reset();
         },
         error: (error) => {
+          this.changeFailed = true;
           console.error("El usuario no existe: ", error); 
         }
       });

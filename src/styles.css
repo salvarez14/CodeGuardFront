@@ -5,6 +5,7 @@
     font-size: 0.9rem;
     margin: 0.3rem !important;
     margin-top: 0.1rem !important;
+    font-family: 'Cinzel', serif;
 }
 :root{
     background-color: #271630;
@@ -50,4 +51,8 @@ body{
     100% {
         box-shadow: 0 0 35px rgba(147, 112, 219, 0.8); 
     }
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
 }
