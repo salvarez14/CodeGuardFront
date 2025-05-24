@@ -1,16 +1,17 @@
-import { Routes } from '@angular/router';
-import { RegisterComponent } from './register/register.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { ErrorComponent } from './error/error.component';
-import { PersonalpageComponent } from './personalpage/personalpage.component';
-import { ExerciseListComponent } from './exerciselist/exerciselist.component';
-import { ExercisePageComponent } from './exercisepage/exercisepage.component';
-import { ExercisePageSolutionsComponent } from './exercisepagesolutions/exercisepagesolutions.component';
-import { CreationExerciseComponent } from './creationexercise/creationexercise.component';
-import { UserPageComponent } from './userpage/userpage.component';
-import { TestsListComponent } from './testslist/testslist.component';
-import { TestPageComponent } from './testpage/testpage.component';
+import { Routes } from "@angular/router";
+import { ErrorComponent } from "./error/error.component";
+import { CreationExerciseComponent } from "./page/creationexercise/creationexercise.component";
+import { ExerciseListComponent } from "./page/exerciselist/exerciselist.component";
+import { ExercisePageComponent } from "./page/exercisepage/exercisepage.component";
+import { ExercisePageSolutionsComponent } from "./page/exercisepagesolutions/exercisepagesolutions.component";
+import { HomeComponent } from "./page/home/home.component";
+import { LoginComponent } from "./page/login/login.component";
+import { PersonalpageComponent } from "./page/personalpage/personalpage.component";
+import { RegisterComponent } from "./page/register/register.component";
+import { TestPageComponent } from "./page/testpage/testpage.component";
+import { TestsListComponent } from "./page/testslist/testslist.component";
+import { UserPageComponent } from "./page/userpage/userpage.component";
+
 
 export const routes: Routes = [
     {path: 'signup', component: RegisterComponent},

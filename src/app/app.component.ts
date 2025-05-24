@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { RegisterComponent } from './register/register.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+
 import { RouterOutlet } from '@angular/router';
+import { HomeComponent } from './page/home/home.component';
+import { HeaderComponent } from './page/header/header.component';
+import { RegisterComponent } from './page/register/register.component';
 
 @Component({
   selector: 'app-root',

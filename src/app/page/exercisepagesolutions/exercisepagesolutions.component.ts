@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ExerciseService } from '../service/exercise.service';
-import { SolutionObjResponse } from '../model/solution-obj-response';
+import { SolutionObjResponse } from '../../model/solution-obj-response';
+import { ExerciseService } from '../../service/exercise.service';
+
 
 @Component({
   selector: 'app-exercisepagesolutions',

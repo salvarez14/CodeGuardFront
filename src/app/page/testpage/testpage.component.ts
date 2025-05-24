@@ -1,12 +1,13 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { ExerciseService } from '../service/exercise.service';
 import { HttpClient } from '@angular/common/http';
-import { ExerciseResponse } from '../model/exercise-response';
-import { CompilerService } from '../service/compiler.service';
-import { CompilerTestRequest } from '../model/compiler-test-request';
+
 import { marked } from 'marked';
+import { CompilerTestRequest } from '../../model/compiler-test-request';
+import { ExerciseResponse } from '../../model/exercise-response';
+import { CompilerService } from '../../service/compiler.service';
+import { ExerciseService } from '../../service/exercise.service';
 
 declare var MathJax: any;
 

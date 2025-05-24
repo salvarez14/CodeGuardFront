@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ExerciseService } from '../service/exercise.service';
-import { CreateExerciseRequest } from '../model/create-exercise-request';
+
 import { Router } from '@angular/router';
+import { CreateExerciseRequest } from '../../model/create-exercise-request';
+import { ExerciseService } from '../../service/exercise.service';
 
 @Component({
   selector: 'app-creationexercise',

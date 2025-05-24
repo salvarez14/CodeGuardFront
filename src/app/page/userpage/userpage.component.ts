@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../service/user.service';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { AuthService } from '../service/auth.service';
 import { CommonModule } from '@angular/common';
-import { UserInfo } from '../model/user-info';
-import { ExerciseService } from '../service/exercise.service';
-import { ExerciseResponse } from '../model/exercise-response';
-import { AdminService } from '../service/admin.service'; 
-import { AdminPrivilegesRequest } from '../model/admin-privileges-request'; 
-import { ErrorService } from '../service/error.service';
+import { AdminPrivilegesRequest } from '../../model/admin-privileges-request';
+import { ExerciseResponse } from '../../model/exercise-response';
+import { UserInfo } from '../../model/user-info';
+import { AdminService } from '../../service/admin.service';
+import { AuthService } from '../../service/auth.service';
+import { ErrorService } from '../../service/error.service';
+import { ExerciseService } from '../../service/exercise.service';
+import { UserService } from '../../service/user.service';
+
 
 @Component({
   selector: 'app-userpage',

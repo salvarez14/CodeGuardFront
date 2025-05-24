@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { ExerciseService } from '../service/exercise.service';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ExerciseResponse } from '../model/exercise-response';
-import { CompilerRequest } from '../model/compiler-request';
-import { CompilerService } from '../service/compiler.service';
+
 import { marked } from 'marked';
 import { retry } from 'rxjs/operators';
+import { CompilerRequest } from '../../model/compiler-request';
+import { ExerciseResponse } from '../../model/exercise-response';
+import { CompilerService } from '../../service/compiler.service';
+import { ExerciseService } from '../../service/exercise.service';
 
 declare var MathJax: any;
 

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { UserService } from '../service/user.service';
 import { Router } from '@angular/router';
-import { UserRequest } from '../model/user-request';
+import { UserRequest } from '../../model/user-request';
+import { UserService } from '../../service/user.service';
+
 
 @Component({
   selector: 'app-register',

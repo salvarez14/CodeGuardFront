@@ -18,12 +18,15 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "@babel/runtime": "^7.27.0",
     "ace-builds": "^1.36.5",
+    "esbuild": "^0.25.2",
     "marked": "^15.0.2",
     "mathjax": "^3.2.2",
     "ngx-ace-wrapper": "^17.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "vite": "^6.2.5",
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
